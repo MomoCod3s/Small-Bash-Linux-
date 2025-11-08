@@ -3,6 +3,12 @@ A tiny bash-like shell implemented in C++.
 
 > **WSL required (Windows only):** This project must be built and run inside **Windows Subsystem for Linux (WSL 2)**. macOS/Linux users can use their native shell environment.
 
+
+## Overview
+This program verifies that WSL is available using commands like 'wsl.exe --status'
+Loops through 'Espinoza-Owens>' reading the user given line and trimming any whitespace while ignoring empty inputs. The input the user gives is tokenized to command then arguments. In WSL sh -c "<command>, <args... >"
+Launching commands with the same stdio making output appear the same on the console and waiting for the first process to finish.
+
 ---
 
 ## Table of Contents
@@ -41,5 +47,6 @@ g++ minishell.cpp -o minishell.exe
 
 ## Run
 ./minishell
+
 
 
